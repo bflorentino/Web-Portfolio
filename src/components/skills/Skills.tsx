@@ -90,11 +90,17 @@ const pathsLearning:IconData[] = [
 const Skills = () => {
   return (
     <>
-        <div className='flex w-full bg-secondary mt-4 py-4 justify-center flex-wrap'>
-        <h1 className='font-baloo text-4xl font-bold text-primarytext w-full ml-12 pb-8'>Mis herramientas</h1>
+        <div className='flex w-full bg-primary py-20 justify-center flex-wrap'>
+        <div className='w-full text-center pb-8 mt-12'>
+            <h1 className='font-ptsans text-5xl font-bold text-center '>
+                <span className='text-primarytext border-b-4 border-button'>⚙ Mis </span>
+                <span className='text-button border-b-4 border-white'>herramientas</span>
+            </h1>
+            <p className='text-white text-sm mt-4'>Echa un vistazo a mis herramientas de trabajo</p>
+        </div>
  
-        <div className='flex flex-col w-1/5 '>
-            <h1 className='text-white font-noto font-bold text-xl text-center'>Desarrollo frontend</h1>
+        <div className=' w-1/5 p-1 rounded-xl hover:border-4 hover:border-white hover:border-l-button hover:border-t-button'>
+            <h1 className='text-white font-noto font-bold text-lg text-center'>Desarrollo frontend</h1>
             <div className='flex flex-col w-full '>
                 {
                     pathsFrontend.map(icon => (
@@ -104,8 +110,8 @@ const Skills = () => {
             </div>
         </div>
 
-        <div className='w-1/5 ml-8'>
-            <h1 className='text-white font-noto font-bold text-xl text-center'>Desarrollo backend</h1>
+        <div className='w-1/5 ml-8 p-1 rounded-xl hover:border-4 hover:border-button hover:border-l-white hover:border-t-white'>
+            <h1 className='text-white font-noto font-bold text-lg text-center'>Desarrollo backend</h1>
             <div className='flex flex-col w-full'>
                 {
                     pathsBackend.map(icon => (
@@ -114,8 +120,8 @@ const Skills = () => {
                 }
             </div>
         </div>
-        <div className='w-1/5 ml-8'>
-            <h1 className='text-white font-noto font-bold text-xl text-center'>Otras herramientas</h1>
+        <div className='w-1/5 ml-8 p-1 rounded-xl hover:border-4 hover:border-white hover:border-l-button hover:border-t-button'>
+            <h1 className='text-white font-noto font-bold text-lg text-center'>Otras herramientas</h1>
             <div className='flex flex-col w-full'>
                 {
                     pathsOthers.map(icon => (
@@ -124,8 +130,8 @@ const Skills = () => {
                 }
             </div>
         </div>
-        <div className='w-1/5 ml-8'>
-            <h1 className='text-white font-noto font-bold text-xl text-center'>Aprendiendo actualmente</h1>
+        <div className='w-1/5 ml-8 p-1 rounded-xl hover:border-4 hover:border-button hover:border-l-white hover:border-t-white'>
+            <h1 className='text-white font-noto font-bold text-lg text-center'>Aprendiendo actualmente</h1>
             <div className='flex flex-col w-full'>
                 {
                     pathsLearning.map(icon => (

@@ -6,13 +6,13 @@ module.exports = {
   theme: {
     colors: {
       white: '#FFFFFF',
-      button: '#E17217',
-      primary: '#2B2A2F',
-      secondary: '#27262B',
+      button: '#0BCC67',
+      primary: '#101010',
+      secondary: '#161D26',
       // primarytext : '#333333',
       primarytext : '#FFFFFF',
-      secondarytext: '#E17217',
-      transparent : 'rgba(0,0,0,0.2)'
+      secondarytext: '#F5F5F5',
+      // transparent : 'rgba(0,0,0,0.2)'
     },
     fontFamily:{
       'baloo': ['Baloo2', 'cursive'],

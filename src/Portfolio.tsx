@@ -2,6 +2,9 @@ import React from 'react';
 import Nav from './components/navigation/Nav';
 import About from './components/about/About';
 import Skills from './components/skills/Skills';
+import Projects from './components/projects/Projects';
+import Footer from './components/footer/Footer';
+import Contact from './components/contact/Contact';
 
 const Portfolio = () => {
   return (
@@ -9,6 +12,9 @@ const Portfolio = () => {
       <Nav />
       <About />
       <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }
