@@ -5,6 +5,7 @@ import Skills from './components/skills/Skills';
 import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
 import Contact from './components/contact/Contact';
+import ScrollButton from './components/scroll/ScrollButton';
 
 const Portfolio = () => {
   return (
@@ -15,6 +16,7 @@ const Portfolio = () => {
       <Projects />
       <Contact />
       <Footer />
+      <ScrollButton />
     </div>
   );
 }

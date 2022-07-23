@@ -3,7 +3,7 @@ import Social from './Social'
 
 const About = () => {
   return (
-    <div className='flex w-full items-center justify-center pt-10 pb-8 bg-primary'>
+    <div className='flex w-full items-center justify-center pt-32 pb-8 bg-primary' id='idAbout'>
         <div className='flex flex-col w-[30%]'>
             <p className='font-noto text-xl text-button font-bold '>Bienvenido, soy</p> 
             <p className='font-merri text-[35px] text-secondarytext mt-2 '>

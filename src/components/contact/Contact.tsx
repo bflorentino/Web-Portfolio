@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 const Contact = () => {
+
+  useEffect(()=> {
+    AOS.init()
+    AOS.refresh()
+})
   return (
     <>
-    <div className='flex flex-col items-center w-full pt-16'>
+    <div 
+      className='flex flex-col items-center w-full pt-16' 
+      id='idContact'
+      data-aos="fade-up"
+      data-aos-duration="3000"
+     >
       <h1 className='text-button text-4xl font-ptsans'>Contactame</h1>
       <p className='text-white pb-4'>Email: bryanmontero81@gmail.com</p>
       <h1 className='bg-primary text-white font-ptsans text-lg w-2/5'> ¿Quieres contactarme? puedes escribirme a través de este formulario o puedes contactarme a mi cuenta de linkedin o telegram (ver abajo)

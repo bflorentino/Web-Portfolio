@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { projectData } from './Projects'
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 const ProjectItem = ({name, 
                     technologies, 
@@ -7,8 +9,14 @@ const ProjectItem = ({name,
                     linkToDemo,
                     description, 
                     picture }: projectData) => {
+
+    useEffect(()=> {
+        AOS.init()
+        AOS.refresh()
+    })
   return (
-    <div className='w-1/3 ml-8 pb-8 '>
+    <div className='w-1/4 ml-8 pb-8 ' data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
         
         <div className='flex flex-col items-center bg-[#171717] rounded-lg  py-2'>
             <div className='flex w-1/4 justify-evenly pb-4'>
@@ -32,11 +40,11 @@ const ProjectItem = ({name,
                 }
             </div>
 
-            <div className='flex w-full justify-center mt-4'>
+            <div className='flex w-full justify-center mt-4 pb-2'>
                 <a href={githubRepository} target='_blanck' className='border-2 border-button rounded-lg font-merri px-2 py-3 hover:bg-button hover: text-white' >Ver en Github 
                 </a>
                 {
-                    typeof picture !== 'undefined' && <a href={linkToDemo} target='_blanck' className='border-2 border-button rounded-lg font-merri px-2 py-3 hover:bg-button hover: text-white ml-8'>Probar</a>
+                    typeof linkToDemo !== 'undefined' && <a href={linkToDemo} target='_blanck' className='border-2 border-button rounded-lg font-merri px-2 py-3 hover:bg-button hover: text-white ml-8'>Probar</a>
                 } 
             </div>
         </div>

@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Icon from './Icon'
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 interface IconData {
     iconPath: string,
@@ -88,9 +90,15 @@ const pathsLearning:IconData[] = [
 ]
 
 const Skills = () => {
+
+    useEffect(()=> {
+        AOS.init()
+        AOS.refresh()
+    })
+
   return (
     <>
-        <div className='flex w-full bg-primary py-20 justify-center flex-wrap'>
+        <div className='flex w-full bg-primary py-20 justify-center flex-wrap' id='idSkills' >
         <div className='w-full text-center pb-8 mt-12'>
             <h1 className='font-ptsans text-5xl font-bold text-center '>
                 <span className='text-primarytext border-b-4 border-button'>⚙ Mis </span>
@@ -99,7 +107,7 @@ const Skills = () => {
             <p className='text-white text-sm mt-4'>Echa un vistazo a mis herramientas de trabajo</p>
         </div>
  
-        <div className=' w-1/5 p-1 rounded-xl hover:border-4 hover:border-white hover:border-l-button hover:border-t-button'>
+        <div className=' w-1/5 p-1 rounded-xl hover:border-4 hover:border-white hover:border-l-button hover:border-t-button' data-aos="zoom-in">
             <h1 className='text-white font-noto font-bold text-lg text-center'>Desarrollo frontend</h1>
             <div className='flex flex-col w-full '>
                 {
@@ -110,7 +118,7 @@ const Skills = () => {
             </div>
         </div>
 
-        <div className='w-1/5 ml-8 p-1 rounded-xl hover:border-4 hover:border-button hover:border-l-white hover:border-t-white'>
+        <div className='w-1/5 ml-8 p-1 rounded-xl hover:border-4 hover:border-button hover:border-l-white hover:border-t-white' data-aos="zoom-in">
             <h1 className='text-white font-noto font-bold text-lg text-center'>Desarrollo backend</h1>
             <div className='flex flex-col w-full'>
                 {
@@ -120,7 +128,7 @@ const Skills = () => {
                 }
             </div>
         </div>
-        <div className='w-1/5 ml-8 p-1 rounded-xl hover:border-4 hover:border-white hover:border-l-button hover:border-t-button'>
+        <div className='w-1/5 ml-8 p-1 rounded-xl hover:border-4 hover:border-white hover:border-l-button hover:border-t-button' data-aos="zoom-in">
             <h1 className='text-white font-noto font-bold text-lg text-center'>Otras herramientas</h1>
             <div className='flex flex-col w-full'>
                 {
@@ -130,7 +138,7 @@ const Skills = () => {
                 }
             </div>
         </div>
-        <div className='w-1/5 ml-8 p-1 rounded-xl hover:border-4 hover:border-button hover:border-l-white hover:border-t-white'>
+        <div className='w-1/5 ml-8 p-1 rounded-xl hover:border-4 hover:border-button hover:border-l-white hover:border-t-white' data-aos="zoom-in">
             <h1 className='text-white font-noto font-bold text-lg text-center'>Aprendiendo actualmente</h1>
             <div className='flex flex-col w-full'>
                 {

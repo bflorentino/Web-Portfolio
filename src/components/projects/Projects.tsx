@@ -17,7 +17,7 @@ const projects : projectData[] = [
     picture: '../../assets/images/bxtype-white.png',
     githubRepository: 'https://github.com/bflorentino/BxType-App.git',
     linkToDemo: 'https://bxtype.netlify.app/',
-    technologies: ["React js", "Tailwind"]
+    technologies: ["React Js", "Tailwind"]
   },
   {
     name: 'Contact Book',
@@ -25,13 +25,29 @@ const projects : projectData[] = [
     picture: '../../assets/images/contat-book.png',
     githubRepository: 'https://github.com/bflorentino/React-Contact-Book.git',
     linkToDemo: 'https://brncontacts.netlify.app/',
-    technologies: ["React js", "Tailwind"]
+    technologies: ["React Js", "Tailwind"]
+  },
+  {
+    name: 'NetBanking Web App',
+    description: "Una aplicación de netbanking para realizar operaciones bancarias.",
+    picture: '../../assets/images/netbanking.png',
+    githubRepository: 'https://github.com/bflorentino/Netbanking-System-WebAPP.git',
+    linkToDemo: undefined,
+    technologies: ["C#", "ASP.NET", "MVC", "Razor", "Entity Framework", "SQL Server"]
+  },
+  {
+    name: 'My Portfolio',
+    description: "Mi portafolio Web",
+    picture: '../../assets/images/portfolio.png',
+    githubRepository: 'https://github.com/bflorentino/Web-Portfolio.git',
+    linkToDemo: undefined,
+    technologies: ["React Js", "Tailwind", "TypeScript" ]
   }
 ]
 
 const Projects = () => {
   return (
-    <div  className='flex flex-col items-center w-full bg-primary py-4  flex-wrap'>
+    <div  className='flex flex-col items-center w-full bg-primary pt-16  flex-wrap' id='idProjects'>
       <h1 className='font-ptsans text-5xl font-bold t w-full text-center pb-8'> 
       <span className='text-primarytext border-b-4 border-button'> 💻 Mis </span>
       <span className='text-button border-b-4 border-white'> Proyectos</span>
@@ -40,7 +56,7 @@ const Projects = () => {
     <p className='border-l-2 border-button px-4 py-12 text-white'>
       Esta es una colección de algunos proyectos que he trabajado recientemente.
     </p>
-    <div className='flex  justify-center mt-8 flex-wrap w-3/4'>
+    <div className='flex justify-center mt-8 flex-wrap w-full'>
     {
       projects.map(project => (
         <ProjectItem key={project.name} 
