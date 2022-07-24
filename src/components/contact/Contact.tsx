@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import AOS from 'aos'
 import "aos/dist/aos.css";
+import Text from '../../language/Text';
 
 const Contact = () => {
 
@@ -16,9 +17,10 @@ const Contact = () => {
       data-aos="fade-up"
       data-aos-duration="3000"
      >
-      <h1 className='text-button text-4xl font-ptsans'>Contactame</h1>
+      <h1 className='text-button text-4xl font-ptsans'><Text tid='contactTitle' /></h1>
       <p className='text-white pb-4'>Email: bryanmontero81@gmail.com</p>
-      <h1 className='bg-primary text-white font-ptsans text-lg w-2/5'> ¿Quieres contactarme? puedes escribirme a través de este formulario o puedes contactarme a mi cuenta de linkedin o telegram (ver abajo)
+      <h1 className='bg-primary text-white font-ptsans text-lg w-2/5'>
+      <Text tid='contactMessage' />
       </h1>
       <form action="" className='flex flex-col items-center bg-primary py-4 text-white w-2/5'>
         <input 
@@ -39,7 +41,7 @@ const Contact = () => {
           rows={5} 
         />
           <button className='bg-button text-[#000] text-lg font-ptsans px-6 py-2 rounded-lg mt-4'>
-            Enviar
+          <Text tid='contactButton' />
           </button>
       </form>
     </div>

@@ -1,0 +1,41 @@
+{   
+    "navAbout": "About",
+    "navSkills" : "Skills",
+    "navProjects" : "Portfolio",
+    "navContact": "Contact",
+    "navEn": "English",
+    "navEs": "Spanish",
+
+    "aboutWelcome": "Welcome, I'm",
+    "aboutOc": "Web Developer",
+    "aboutInfo": "Hi there, my name is Bryan Xavier Florentino Montero and I'm from Dominican Republic. I'm an programming enthusiastic young with great passion for this field, dedicated to Web Development. Always willing to learn new things, a technology lover and everything inside Web Development. This is my personal portfolio in which you'll find information about the programming tools I manage, projects made by me and some ways of contact. Here is My CV in english and spanish, in case you want to check them. Hope you enjoy my projects.",
+    "aboutSpanishCV": "SPANISH CV",
+    "aboutEnglishCV": "ENGLISH CV",
+    
+    "me": "My",
+
+    "skillsTitle": " Skills",
+    "skillsMessage": "Give an eye to my work tools",
+    "skillsFrontend": "Frontend Development",
+    "skillsBackend": "Backend Development",
+    "skillsOthers": "Other tools",
+    "skillsCurrent": "Currently learning",
+
+    "projectsTitle": " Portfolio",
+    "projectsMessage": "This is a collection with some applications I've built recently.",
+   
+    "projectsInfo" : [
+        "A typing test. Try your speed and accuracy when typing on a keyboard with time settings of 1, 2 and 3 minutes in english and spanish.",
+        "A Phone Book. You can save info from your contacts and edit it with a very adapted to movile devices design.",
+        "A web application to make bank operations.",
+        "My personal Web Portfolio"
+    ],
+   
+    "projectsTechnology": "Technologies:",
+    "projectsGitButton": "View GitHub",
+    "projectTryButton": "Try App",
+
+    "contactTitle": "Let's get in touch",
+    "contactMessage": "Want to get in touch with me? you can send me an email or you can contact me through my linkedin account or telegram (view below)",
+    "contactButton": "Send"
+}

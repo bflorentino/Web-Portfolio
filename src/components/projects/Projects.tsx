@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { langContext } from '../../context/langsContext'
+import Text from '../../language/Text'
 import ProjectItem from './ProjectItem'
 
 export interface projectData {
   name: string,
-  description: string,
   picture: string | undefined,
+  description: string
   githubRepository: string,
   linkToDemo: string | undefined,
   technologies : string[]
@@ -13,7 +15,7 @@ export interface projectData {
 const projects : projectData[] = [
   {
     name: 'BxType App',
-    description: "Un test de mecanografía. Prueba tu velocidad y precisión al usar el teclado, con tests de 1, 2 o 3 minutos en ingles y español",
+    description : " ",
     picture: '../../assets/images/bxtype-white.png',
     githubRepository: 'https://github.com/bflorentino/BxType-App.git',
     linkToDemo: 'https://bxtype.netlify.app/',
@@ -21,7 +23,7 @@ const projects : projectData[] = [
   },
   {
     name: 'Contact Book',
-    description: "Una agenda de contactos. Puedes guardar información de tus contactos y editarlos con un diseño muy adaptado a dispositivos móviles.",
+    description : " ",
     picture: '../../assets/images/contat-book.png',
     githubRepository: 'https://github.com/bflorentino/React-Contact-Book.git',
     linkToDemo: 'https://brncontacts.netlify.app/',
@@ -29,7 +31,7 @@ const projects : projectData[] = [
   },
   {
     name: 'NetBanking Web App',
-    description: "Una aplicación de netbanking para realizar operaciones bancarias.",
+    description : " ",
     picture: '../../assets/images/netbanking.png',
     githubRepository: 'https://github.com/bflorentino/Netbanking-System-WebAPP.git',
     linkToDemo: undefined,
@@ -46,27 +48,31 @@ const projects : projectData[] = [
 ]
 
 const Projects = () => {
+  
+  const {dictionary} = useContext(langContext);
+
   return (
     <div  className='flex flex-col items-center w-full bg-primary pt-16  flex-wrap' id='idProjects'>
       <h1 className='font-ptsans text-5xl font-bold t w-full text-center pb-8'> 
-      <span className='text-primarytext border-b-4 border-button'> 💻 Mis </span>
-      <span className='text-button border-b-4 border-white'> Proyectos</span>
+      <span className='text-primarytext border-b-4 border-button'> 💻 <Text tid='me' /> </span>
+      <span className='text-button border-b-4 border-white'> <Text tid='projectsTitle' /></span>
     </h1>
 
     <p className='border-l-2 border-button px-4 py-12 text-white'>
-      Esta es una colección de algunos proyectos que he trabajado recientemente.
+      <Text tid='projectsMessage' />
     </p>
     <div className='flex justify-center mt-8 flex-wrap w-full'>
     {
-      projects.map(project => (
+  
+      projects.map((project, i) => (
         <ProjectItem key={project.name} 
             name={project.name} 
             githubRepository={project.githubRepository}
             linkToDemo={project.linkToDemo}
-            description={project.description}
+            description={dictionary.projectsInfo[i]}
             technologies={project.technologies}
             picture={project.picture} 
-            />
+        />
             ))
           }
     </div>
