@@ -24,7 +24,7 @@ const ScrollButton = () => {
     window.addEventListener('scroll', handleVisible);
 
     return (
-    <div className='fixed w-full left-[90%] bottom-10 h-5 text-4xl cursor-pointer text-button '>
+    <div className='fixed w-full left-[90%] bottom-10 h-5 text-[40px] cursor-pointer text-button '>
         <FaArrowCircleUp onClick={handleScroll} style={{display: visible ? 'inline': 'none'}} />
     </div>
   )

@@ -3,6 +3,7 @@ import AOS from 'aos'
 import "aos/dist/aos.css";
 import Text from '../../language/Text';
 
+
 const Contact = () => {
 
   useEffect(()=> {

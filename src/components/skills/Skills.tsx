@@ -7,34 +7,35 @@ import Text from '../../language/Text';
 interface IconData {
     iconPath: string,
     iconName: string,
-    color: string 
+    styles: string
 }
 
 const pathsFrontend:IconData[] = [
     {
         iconPath: '../../assets/images/HTML.png',
         iconName: 'HTML',
-        color:'bg-[#E34F26]'
+        styles: "bg-[#20232A] hover:bg-[#E34F26] w-3/4 h-8 flex items-center justify-center"
     },
     {
         iconPath: '../../assets/images/CSS.png',
         iconName: 'CSS',
-        color:'bg-[#0277BD]'
+        styles: "bg-[#20232A] hover:bg-[#0277BD] w-3/4 h-8 flex items-center justify-center"
     },
     {
         iconPath: '../../assets/images/javascript.png',
         iconName: 'JavaScript',
-        color:'bg-[#FFD600]'
+        styles: 'bg-[#20232A] hover:bg-[#CCC720] w-3/4 h-8 flex items-center justify-center'
     },
     {
         iconPath: '../../assets/images/react.png',
         iconName: 'React JS',
-        color:'bg-[#39C1D7]'
+        styles: 'bg-[#20232A] hover:bg-[#39C1D7] w-3/4 h-8 flex items-center justify-center'
     },
     {
         iconPath: '../../assets/images/tailwind.png',
         iconName: 'Tailwind CSS',
-        color:'bg-[#01B7D6]'
+        styles: 'bg-[#20232A] hover:bg-[#01B7D6] w-3/4 h-8 flex items-center justify-center'
+        
     },
 ]
 
@@ -42,22 +43,22 @@ const pathsBackend:IconData[] = [
     {
         iconPath: '../../assets/images/c-sharp.png',
         iconName: 'C#',
-        color:'bg-[#B14796]'
+        styles: 'bg-[#20232A] hover:bg-[#B14796] w-3/4 h-8 flex items-center justify-center'
     },
     {
         iconPath: '../../assets/images/net.svg',
         iconName: '.Net',
-        color:'bg-[#672A7A]'
+        styles: 'bg-[#20232A] hover:bg-[#672A7A] w-3/4 h-8 flex items-center justify-center'
     },
     {
         iconPath: '../../assets/images/mongodb.png',
         iconName: 'MongoDb',
-        color:'bg-[#4CAF50]'
+        styles: 'bg-[#20232A] hover:bg-[#4CAF50] w-3/4 h-8 flex items-center justify-center'
     },
     {
         iconPath: '../../assets/images/mysql.png',
         iconName: 'MySQL',
-        color:'bg-[#F09109]'
+        styles: 'bg-[#20232A] hover:bg-[#F09109] w-3/4 h-8 flex items-center justify-center'
     },
 ]
 
@@ -66,12 +67,12 @@ const pathsOthers:IconData[] = [
     {
         iconPath: '../../assets/images/git.png',
         iconName: 'Git',
-        color:'bg-[#F4511E]'
+        styles: 'bg-[#20232A] hover:bg-[#F4511E] w-3/4 h-8 flex items-center justify-center'
     },
     {
         iconPath: '../../assets/images/vs code.png',
         iconName: 'Vs Code',
-        color:'bg-[#29B6F6]'
+        styles: 'bg-[#20232A] hover:bg-[#29B6F6] w-3/4 h-8 flex items-center justify-center'
     },
 
 ]
@@ -81,12 +82,12 @@ const pathsLearning:IconData[] = [
     {
         iconPath: '../../assets/images/nodejs.png',
         iconName: 'Node Js',
-        color:'bg-[#37474F]'
+        styles: 'bg-[#20232A] hover:bg-[#37474F] w-3/4 h-8 flex items-center justify-center'
     },
     {
         iconPath: '../../assets/images/typescript.png',
         iconName: 'Typescript',
-        color:'bg-[#1976D2]'
+        styles: 'bg-[#20232A] hover:bg-[#1976D2] w-3/4 h-8 flex items-center justify-center'
     },
 ]
 
@@ -113,7 +114,7 @@ const Skills = () => {
             <div className='flex flex-col w-full '>
                 {
                     pathsFrontend.map(icon => (
-                        <Icon key={icon.iconName} iconPath={icon.iconPath} iconName={icon.iconName} color={icon.color}  />
+                        <Icon key={icon.iconName} iconPath={icon.iconPath} iconName={icon.iconName} styles={icon.styles}  />
                         ))
                     }
             </div>
@@ -124,7 +125,7 @@ const Skills = () => {
             <div className='flex flex-col w-full'>
                 {
                     pathsBackend.map(icon => (
-                        <Icon key={icon.iconName} iconPath={icon.iconPath} iconName={icon.iconName} color={icon.color} />
+                        <Icon key={icon.iconName} iconPath={icon.iconPath} iconName={icon.iconName} styles={icon.styles} />
                         ))
                 }
             </div>
@@ -134,7 +135,7 @@ const Skills = () => {
             <div className='flex flex-col w-full'>
                 {
                     pathsOthers.map(icon => (
-                        <Icon key={icon.iconName} iconPath={icon.iconPath} iconName={icon.iconName} color={icon.color} />
+                        <Icon key={icon.iconName} iconPath={icon.iconPath} iconName={icon.iconName} styles={icon.styles} />
                         ))
                 }
             </div>
@@ -144,7 +145,7 @@ const Skills = () => {
             <div className='flex flex-col w-full'>
                 {
                     pathsLearning.map(icon => (
-                        <Icon key={icon.iconName} iconPath={icon.iconPath} iconName={icon.iconName} color={icon.color} />
+                        <Icon key={icon.iconName} iconPath={icon.iconPath} iconName={icon.iconName} styles={icon.styles} />
                         ))
                 }
             </div>

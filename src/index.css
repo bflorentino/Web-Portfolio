@@ -4,7 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
-    background-color: #101010;
+#root{
     display: flex;
+    overflow: auto;
+}
+
+body{
+    background-color: #101010;
+}
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+    width:7px;
+}
+
+body::-webkit-scrollbar-button:increment, body::-webkit-scrollbar-button {
+    display: none;
+} 
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0BCC67;
+    border-radius: 20px;
 }

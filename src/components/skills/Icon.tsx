@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Icon = ({iconPath, iconName, color }: {iconPath: string, iconName: string, color:string}) => {
+const Icon = ({iconPath, iconName, styles }: {iconPath: string, iconName: string, styles:string}) => {
 
   return (
     <div 
@@ -8,12 +8,12 @@ const Icon = ({iconPath, iconName, color }: {iconPath: string, iconName: string,
     >
         <div className=' w-1/4 flex items-center justify-center'>
             <img 
-            src={iconPath} 
-            alt={iconName}
-            className="w-8 h-8" 
+              src={iconPath} 
+              alt={iconName}
+              className="w-8 h-8" 
             />
         </div>
-        <div className={`${color} w-3/4 h-8 flex items-center justify-center`}>
+        <div className={styles}>
             <p className='font-merri text-white text-[16px]'>{iconName}</p>
         </div>
     </div>
