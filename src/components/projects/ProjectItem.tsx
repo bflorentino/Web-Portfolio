@@ -16,7 +16,7 @@ const ProjectItem = ({name,
         AOS.refresh()
     })
   return (
-    <div className='w-1/4 ml-8 pb-8 ' data-aos="fade-up"
+    <div className='w-4/5 minilaptop:w-2/5 laptop:w-1/4 minilaptop:ml-8 pb-8 ' data-aos="fade-up"
     data-aos-anchor-placement="top-bottom">
         
         <div className='flex flex-col items-center bg-[#171717] rounded-lg  py-2'>

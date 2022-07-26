@@ -29,3 +29,27 @@ body::-webkit-scrollbar-thumb {
     background-color: #0BCC67;
     border-radius: 20px;
 }
+
+#btn-menu span {
+    transform-origin: 4px 0px;
+    transition: all 0.2s linear;
+  }
+
+.close{
+    height: 120px;
+    position: sticky;
+}
+
+.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background-color: #ffffff;
+  }
+  
+.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+  }
+  
+.close span:nth-child(3) {
+    display: none;
+  }

@@ -53,12 +53,12 @@ const Projects = () => {
 
   return (
     <div  className='flex flex-col items-center w-full bg-primary pt-16  flex-wrap' id='idProjects'>
-      <h1 className='font-ptsans text-5xl font-bold t w-full text-center pb-8'> 
+      <h1 className='font-ptsans text-3xl minitablet:text-5xl font-bold t w-full text-center pb-8'> 
       <span className='text-primarytext border-b-4 border-button'> 💻 <Text tid='me' /> </span>
       <span className='text-button border-b-4 border-white'> <Text tid='projectsTitle' /></span>
     </h1>
 
-    <p className='border-l-2 border-button px-4 py-12 text-white'>
+    <p className='border-l-2 ml-4 minilaptop:ml-0 border-button px-4 py-12 text-white'>
       <Text tid='projectsMessage' />
     </p>
     <div className='flex justify-center mt-8 flex-wrap w-full'>

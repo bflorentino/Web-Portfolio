@@ -100,56 +100,56 @@ const Skills = () => {
 
   return (
     <>
-        <div className='flex w-full bg-primary py-20 justify-center flex-wrap' id='idSkills' >
-        <div className='w-full text-center pb-8 mt-12'>
-            <h1 className='font-ptsans text-5xl font-bold text-center '>
-                <span className='text-primarytext border-b-4 border-button'>⚙ <Text tid='me' /> </span>
-                <span className='text-button border-b-4 border-white'> <Text tid='skillsTitle' /></span>
-            </h1>
-            <p className='text-white text-sm mt-4'><Text tid='skillsMessage' /></p>
-        </div>
- 
-        <div className=' w-1/5 p-1 rounded-xl hover:border-4 hover:border-white hover:border-l-button hover:border-t-button' data-aos="zoom-in">
-            <h1 className='text-white font-noto font-bold text-lg text-center'><Text tid='skillsFrontend'/></h1>
-            <div className='flex flex-col w-full '>
-                {
-                    pathsFrontend.map(icon => (
-                        <Icon key={icon.iconName} iconPath={icon.iconPath} iconName={icon.iconName} styles={icon.styles}  />
-                        ))
-                    }
+        <div className='flex flex-col items-center minilaptop:items-start minilaptop:flex-row w-full bg-primary py-20 justify-center minilaptop:flex-wrap' id='idSkills' >
+            <div className='w-full text-center pb-8 mt-12'>
+                <h1 className='font-ptsans text-3xl minitablet:text-5xl font-bold text-center '>
+                    <span className='text-primarytext border-b-4 border-button'>⚙ <Text tid='me' /> </span>
+                    <span className='text-button border-b-4 border-white'> <Text tid='skillsTitle' /></span>
+                </h1>
+                <p className='text-white text-sm mt-4'><Text tid='skillsMessage' /></p>
             </div>
-        </div>
+    
+            <div className='flex flex-col items-center w-[90%] minilaptop:w-1/3 laptop:w-1/5 p-1 rounded-xl hover:border-4 hover:border-white hover:border-l-button hover:border-t-button' data-aos="zoom-in">
+                <h1 className='text-white font-noto font-bold text-lg text-center'><Text tid='skillsFrontend'/></h1>
+                <div className='flex flex-col w-full '>
+                    {
+                        pathsFrontend.map(icon => (
+                            <Icon key={icon.iconName} iconPath={icon.iconPath} iconName={icon.iconName} styles={icon.styles}  />
+                            ))
+                        }
+                </div>
+            </div>
 
-        <div className='w-1/5 ml-8 p-1 rounded-xl hover:border-4 hover:border-button hover:border-l-white hover:border-t-white' data-aos="zoom-in">
-            <h1 className='text-white font-noto font-bold text-lg text-center'><Text tid='skillsBackend' /></h1>
-            <div className='flex flex-col w-full'>
-                {
-                    pathsBackend.map(icon => (
-                        <Icon key={icon.iconName} iconPath={icon.iconPath} iconName={icon.iconName} styles={icon.styles} />
-                        ))
-                }
+            <div className='flex flex-col items-center w-[90%] minilaptop:w-1/3 laptop:w-1/5 mt-6 minilaptop:mt-0  minilaptop:ml-8 p-1 rounded-xl hover:border-4 hover:border-button hover:border-l-white hover:border-t-white' data-aos="zoom-in">
+                <h1 className='text-white font-noto font-bold text-lg text-center'><Text tid='skillsBackend' /></h1>
+                <div className='flex flex-col w-full'>
+                    {
+                        pathsBackend.map(icon => (
+                            <Icon key={icon.iconName} iconPath={icon.iconPath} iconName={icon.iconName} styles={icon.styles} />
+                            ))
+                    }
+                </div>
             </div>
-        </div>
-        <div className='w-1/5 ml-8 p-1 rounded-xl hover:border-4 hover:border-white hover:border-l-button hover:border-t-button' data-aos="zoom-in">
-            <h1 className='text-white font-noto font-bold text-lg text-center'><Text tid='skillsOthers' /></h1>
-            <div className='flex flex-col w-full'>
-                {
-                    pathsOthers.map(icon => (
-                        <Icon key={icon.iconName} iconPath={icon.iconPath} iconName={icon.iconName} styles={icon.styles} />
-                        ))
-                }
+            <div className='flex flex-col items-center w-[90%] minilaptop:w-1/3 laptop:w-1/5  mt-6 laptop:mt-0  minilaptop:ml-8 p-1 rounded-xl hover:border-4 hover:border-white hover:border-l-button hover:border-t-button' data-aos="zoom-in">
+                <h1 className='text-white font-noto font-bold text-lg text-center'><Text tid='skillsOthers' /></h1>
+                <div className='flex flex-col w-full'>
+                    {
+                        pathsOthers.map(icon => (
+                            <Icon key={icon.iconName} iconPath={icon.iconPath} iconName={icon.iconName} styles={icon.styles} />
+                            ))
+                    }
+                </div>
             </div>
-        </div>
-        <div className='w-1/5 ml-8 p-1 rounded-xl hover:border-4 hover:border-button hover:border-l-white hover:border-t-white' data-aos="zoom-in">
-            <h1 className='text-white font-noto font-bold text-lg text-center'><Text tid='skillsCurrent' /></h1>
-            <div className='flex flex-col w-full'>
-                {
-                    pathsLearning.map(icon => (
-                        <Icon key={icon.iconName} iconPath={icon.iconPath} iconName={icon.iconName} styles={icon.styles} />
-                        ))
-                }
+            <div className='flex flex-col items-center w-[90%] minilaptop:w-1/3 laptop:w-1/5 mt-6 laptop:mt-0 minilaptop:ml-8 p-1 rounded-xl hover:border-4 hover:border-button hover:border-l-white hover:border-t-white' data-aos="zoom-in">
+                <h1 className='text-white font-noto font-bold text-lg text-center'><Text tid='skillsCurrent' /></h1>
+                <div className='flex flex-col w-full'>
+                    {
+                        pathsLearning.map(icon => (
+                            <Icon key={icon.iconName} iconPath={icon.iconPath} iconName={icon.iconName} styles={icon.styles} />
+                            ))
+                    }
+                </div>
             </div>
-        </div>
     </div>
   </>
   )

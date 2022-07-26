@@ -72,12 +72,12 @@ const Contact = () => {
       data-aos="fade-up"
       data-aos-duration="3000"
      >
-      <h1 className='text-button text-4xl font-ptsans'><Text tid='contactTitle' /></h1>
+      <h1  className='text-button text-4xl font-ptsans'><Text tid='contactTitle' /></h1>
       <p className='text-white pb-4'>Email: bryanmontero81@gmail.com</p>
-      <h1 className='bg-primary text-white font-ptsans text-lg w-2/5'>
+      <h1 className='bg-primary text-white font-ptsans text-lg text-justify w-4/5 minilaptop:w-2/5'>
       <Text tid='contactMessage' />
       </h1>
-      <form ref={contact} action="" className='flex flex-col items-center bg-primary py-4 text-white w-2/5'>
+      <form ref={contact} action="" className='flex flex-col items-center bg-primary py-4 text-white w-4/5 minilaptop:w-2/5'>
         <input 
             type="text" 
             name='from_name' 
