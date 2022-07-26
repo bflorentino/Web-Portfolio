@@ -104,7 +104,7 @@ const Skills = () => {
         <div className='w-full text-center pb-8 mt-12'>
             <h1 className='font-ptsans text-5xl font-bold text-center '>
                 <span className='text-primarytext border-b-4 border-button'>⚙ <Text tid='me' /> </span>
-                <span className='text-button border-b-4 border-white'><Text tid='skillsTitle' /></span>
+                <span className='text-button border-b-4 border-white'> <Text tid='skillsTitle' /></span>
             </h1>
             <p className='text-white text-sm mt-4'><Text tid='skillsMessage' /></p>
         </div>
