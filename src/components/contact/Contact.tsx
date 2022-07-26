@@ -34,10 +34,10 @@ const Contact = () => {
 
     if(isValid === true){
 
-      emailjs.sendForm(process.env.REACT_APP_SERVICEID as string, 
-                      process.env.REACT_APP_TEMPLATEID as string , 
+      emailjs.sendForm('service_imxx663', 
+                      'template_js71wcl', 
                       contact.current, 
-                      process.env.REACT_APP_PUBLICKEY as string)
+                      'gODIyeeU_lGNB8TQ-')
       .then(res => {
         Swal.fire({
           title: "Email Send",
