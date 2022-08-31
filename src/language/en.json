@@ -25,6 +25,8 @@
     "projectsMessage": "This is a collection with some applications I've built recently.",
    
     "projectsInfo" : [
+        "A small social media called Gliskup App. Users can sign up, make posts, view posts from other users, react to those posts, follow other users and other features.",
+        "A university project, which consists of an application to make love declarations which can be made publicly or anonymously. Declarations are diplayed as posts in the main section.",
         "A typing test. Try your speed and accuracy when typing on a keyboard with time settings of 1, 2 and 3 minutes in english and spanish (It's not responsive)",
         "A Phone Book. You can save info from your contacts and edit it with a very adapted to movile devices design.",
         "A web application to make bank operations.",

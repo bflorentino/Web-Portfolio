@@ -14,6 +14,30 @@ export interface projectData {
 
 const projects : projectData[] = [
   {
+    name: 'Gliskup',
+    description : " ",
+    picture: '../../assets/images/gliskup.png',
+    githubRepository: 'https://github.com/bflorentino/Gliskup-App.git',
+    linkToDemo: 'https://gliskup.netlify.app/',
+    technologies: ["React Js", "Tailwind", "Node JS", "Express", "Mongo Db"]
+  },
+  {
+    name: 'ITLAMOR',
+    description : " ",
+    picture: '../../assets/images/itlamor.png',
+    githubRepository: 'https://github.com/bflorentino/Proyecto-Final-Prog-Web.git',
+    linkToDemo: 'https://itlamor.netlify.app/',
+    technologies: ["React Js", "SASS", "Firebase"]
+  },
+  {
+    name: 'My Portfolio',
+    description: "Mi portafolio Web",
+    picture: '../../assets/images/portfolio.png',
+    githubRepository: 'https://github.com/bflorentino/Web-Portfolio.git',
+    linkToDemo: undefined,
+    technologies: ["React Js", "Tailwind", "TypeScript" ]
+  },
+  {
     name: 'BxType App',
     description : " ",
     picture: '../../assets/images/bxtype-white.png',
@@ -37,14 +61,6 @@ const projects : projectData[] = [
     linkToDemo: undefined,
     technologies: ["C#", "ASP.NET", "MVC", "Razor", "Entity Framework", "SQL Server"]
   },
-  {
-    name: 'My Portfolio',
-    description: "Mi portafolio Web",
-    picture: '../../assets/images/portfolio.png',
-    githubRepository: 'https://github.com/bflorentino/Web-Portfolio.git',
-    linkToDemo: undefined,
-    technologies: ["React Js", "Tailwind", "TypeScript" ]
-  }
 ]
 
 const Projects = () => {
@@ -61,22 +77,21 @@ const Projects = () => {
     <p className='border-l-2 ml-4 minilaptop:ml-0 border-button px-4 py-12 text-white'>
       <Text tid='projectsMessage' />
     </p>
-    <div className='flex justify-center mt-8 flex-wrap w-full'>
-    {
-  
-      projects.map((project, i) => (
-        <ProjectItem key={project.name} 
-            name={project.name} 
-            githubRepository={project.githubRepository}
-            linkToDemo={project.linkToDemo}
-            description={dictionary.projectsInfo[i]}
-            technologies={project.technologies}
-            picture={project.picture} 
-        />
-            ))
-          }
-    </div>
+      <div className='flex justify-center mt-8 flex-wrap w-full'>
+      {
     
+        projects.map((project, i) => (
+          <ProjectItem key={project.name} 
+              name={project.name} 
+              githubRepository={project.githubRepository}
+              linkToDemo={project.linkToDemo}
+              description={dictionary.projectsInfo[i]}
+              technologies={project.technologies}
+              picture={project.picture} 
+          />
+              ))
+            }
+      </div>
     </div>
   )
 }

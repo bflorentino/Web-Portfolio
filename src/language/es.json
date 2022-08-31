@@ -24,10 +24,17 @@
     "projectsTitle": "Proyectos",
     "projectsMessage": "Esta es una colección de algunos proyectos que he trabajado recientemente.",
     "projectsInfo": [
+        "Esta es una pequeña red social llamada Gliskup App. Permite a los usuarios registrarse, publicar posts, ver posts de otros usuarios, reaccionar a esos posts (con distintos tipos de recacciones), seguir a otros usuarios, entre otras características.",
+
+        "Este fue un proyecto universitario, que consiste en una aplicación para hacer declaraciones de amor que pueden ser realizadas de forma pública o de forma anónima. Dichas declaraciones se ven en forma de posts en la sección principal.",
+        
         "Un test de mecanografía. Prueba tu velocidad y precisión al usar el teclado, con tests de 1, 2 o 3 minutos en ingles y español (No es responsive).",
+        
         "Una agenda de contactos. Puedes guardar información de tus contactos y editarlos con un diseño muy adaptado a dispositivos móviles.",
+        
         "Una aplicación de netbanking para realizar operaciones bancarias.",
-         "Mi portafolio Web"
+        
+        "Mi portafolio Web"
     ],
     "projectsTechnology": "Tecnologias utilizadas:",
     "projectsGitButton": "Ver en GitHub",
