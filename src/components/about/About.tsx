@@ -34,7 +34,7 @@ const About = () => {
                     <Text tid='aboutSpanishCV' />
                 </a>
                 <a
-                  href="../../assets/docs/CV English Bryan Xavier Florentino Montero.pdf"
+                  href="../../assets/docs/English Resume - Bryan Xavier Florentino Montero.pdf"
                   target='_blanck'
                   className='bg-button text-white pt-2 px-6 rounded-2xl text-[10px] normalphone:text-[13px]
                   laptop:text-[14px] py-2 ml-4 font-bold  hover:bg-white hover:text-button'>
