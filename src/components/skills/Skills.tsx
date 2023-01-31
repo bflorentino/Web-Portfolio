@@ -22,6 +22,11 @@ const pathsFrontend:IconData[] = [
         styles: "bg-[#20232A] hover:bg-[#0277BD] w-3/4 h-8 flex items-center justify-center"
     },
     {
+        iconPath: '../../assets/images/typescript.png',
+        iconName: 'Typescript',
+        styles: 'bg-[#20232A] hover:bg-[#1976D2] w-3/4 h-8 flex items-center justify-center'
+    },
+    {
         iconPath: '../../assets/images/javascript.png',
         iconName: 'JavaScript',
         styles: 'bg-[#20232A] hover:bg-[#CCC720] w-3/4 h-8 flex items-center justify-center'
@@ -34,21 +39,15 @@ const pathsFrontend:IconData[] = [
     {
         iconPath: '../../assets/images/tailwind.png',
         iconName: 'Tailwind CSS',
-        styles: 'bg-[#20232A] hover:bg-[#01B7D6] w-3/4 h-8 flex items-center justify-center'
-        
-    },
+        styles: 'bg-[#20232A] hover:bg-[#01B7D6] w-3/4 h-8 flex items-center justify-center'   
+    }
 ]
 
 const pathsBackend:IconData[] = [
     {
-        iconPath: '../../assets/images/c-sharp.png',
-        iconName: 'C#',
-        styles: 'bg-[#20232A] hover:bg-[#B14796] w-3/4 h-8 flex items-center justify-center'
-    },
-    {
-        iconPath: '../../assets/images/net.svg',
-        iconName: '.Net',
-        styles: 'bg-[#20232A] hover:bg-[#672A7A] w-3/4 h-8 flex items-center justify-center'
+        iconPath: '../../assets/images/nodejs.png',
+        iconName: 'Node Js',
+        styles: 'bg-[#20232A] hover:bg-[#37474F] w-3/4 h-8 flex items-center justify-center'
     },
     {
         iconPath: '../../assets/images/mongodb.png',
@@ -60,6 +59,16 @@ const pathsBackend:IconData[] = [
         iconName: 'MySQL',
         styles: 'bg-[#20232A] hover:bg-[#F09109] w-3/4 h-8 flex items-center justify-center'
     },
+    {
+        iconPath: '../../assets/images/c-sharp.png',
+        iconName: 'C#',
+        styles: 'bg-[#20232A] hover:bg-[#B14796] w-3/4 h-8 flex items-center justify-center'
+    },
+    {
+        iconPath: '../../assets/images/net.svg',
+        iconName: '.Net',
+        styles: 'bg-[#20232A] hover:bg-[#672A7A] w-3/4 h-8 flex items-center justify-center'
+    }
 ]
 
 const pathsOthers:IconData[] = [
@@ -73,21 +82,6 @@ const pathsOthers:IconData[] = [
         iconPath: '../../assets/images/vs code.png',
         iconName: 'Vs Code',
         styles: 'bg-[#20232A] hover:bg-[#29B6F6] w-3/4 h-8 flex items-center justify-center'
-    },
-
-]
-
-const pathsLearning:IconData[] = [
-        
-    {
-        iconPath: '../../assets/images/nodejs.png',
-        iconName: 'Node Js',
-        styles: 'bg-[#20232A] hover:bg-[#37474F] w-3/4 h-8 flex items-center justify-center'
-    },
-    {
-        iconPath: '../../assets/images/typescript.png',
-        iconName: 'Typescript',
-        styles: 'bg-[#20232A] hover:bg-[#1976D2] w-3/4 h-8 flex items-center justify-center'
     },
 ]
 
@@ -140,7 +134,7 @@ const Skills = () => {
                     }
                 </div>
             </div>
-            <div className='flex flex-col items-center w-[90%] minilaptop:w-1/3 laptop:w-1/5 mt-6 laptop:mt-0 minilaptop:ml-8 p-1 rounded-xl hover:border-4 hover:border-button hover:border-l-white hover:border-t-white' data-aos="zoom-in">
+            {/* <div className='flex flex-col items-center w-[90%] minilaptop:w-1/3 laptop:w-1/5 mt-6 laptop:mt-0 minilaptop:ml-8 p-1 rounded-xl hover:border-4 hover:border-button hover:border-l-white hover:border-t-white' data-aos="zoom-in">
                 <h1 className='text-white font-noto font-bold text-lg text-center'><Text tid='skillsCurrent' /></h1>
                 <div className='flex flex-col w-full'>
                     {
@@ -149,7 +143,7 @@ const Skills = () => {
                             ))
                     }
                 </div>
-            </div>
+            </div> */}
     </div>
   </>
   )
